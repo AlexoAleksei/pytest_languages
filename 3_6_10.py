@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-def test_languages(browser):
+def test_basket_add_button(browser):
     browser.get("http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/")
     time.sleep(30)
     button_add_to_basket = browser.find_elements(By.CSS_SELECTOR, ".btn-add-to-basket")
